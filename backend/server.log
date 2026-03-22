@@ -1,0 +1,34 @@
+INFO:     Started server process [68109]
+INFO:     Waiting for application startup.
+2026-03-22 11:41:39,051 - app.main - INFO - Starting AusRace Predictor AI API
+2026-03-22 11:41:39,294 - app.main - INFO - Database initialized
+2026-03-22 11:41:39,325 - app.main - INFO - Database already has 12267 races. Skipping initial load.
+2026-03-22 11:41:39,325 - app.main - INFO - Adding upcoming events...
+2026-03-22 11:41:39,325 - app.services.scraper.historical_loader - INFO - Adding upcoming events for next 30 days
+2026-03-22 11:41:39,842 - app.services.scraper.historical_loader - INFO - Processed 5 future days, 35 upcoming races
+2026-03-22 11:41:40,886 - app.services.scraper.historical_loader - INFO - Processed 10 future days, 133 upcoming races
+2026-03-22 11:41:41,403 - app.services.scraper.historical_loader - INFO - Processed 15 future days, 193 upcoming races
+2026-03-22 11:41:42,092 - app.services.scraper.historical_loader - INFO - Processed 20 future days, 241 upcoming races
+2026-03-22 11:41:42,098 - app.services.scraper.historical_loader - INFO - Processed 20 future days, 241 upcoming races
+2026-03-22 11:41:42,602 - app.services.scraper.historical_loader - INFO - Upcoming events added: {'meetings_created': 37, 'races_created': 301, 'participants_created': 3465, 'days_processed': 23, 'errors': []}
+2026-03-22 11:41:42,602 - app.main - INFO - Upcoming events added: 301 races
+INFO:     Application startup complete.
+INFO:     Uvicorn run2026-03-22 11:41:43,303 - app.services.scraper.histINFO:     127.0.0.1:57329 - "GET /api/v1/races/upcoming HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57330 - "GET /api/v1/races/upcoming HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57334 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57336 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57340 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57342 - "GET /openapi.json HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57345 - "GET /api/races/upcoming/?limit=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57347 - "GET /api/races/upcoming/?limit=2 HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57358 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57357 - "GET /health HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57361 - "GET /api/scraping/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57362 - "GET /api/scraping/stats HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57890 - "GET / HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57890 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57892 - "GET /apple-touch-icon-precomposed.png HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57892 - "GET /apple-touch-icon.png HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57892 - "GET /favicon.ico HTTP/1.1" 404 Not Found
+INFO:     127.0.0.1:57949 - "GET /docs HTTP/1.1" 200 OK
+INFO:     127.0.0.1:57949 - "GET /openapi.json HTTP/1.1" 200 OK
